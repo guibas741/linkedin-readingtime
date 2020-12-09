@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Linkedin Reading Time",
+  "description": "Know the reading time of Linkedin texts",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "tabs", 
+    "https://*/*"
+  ]
+}
